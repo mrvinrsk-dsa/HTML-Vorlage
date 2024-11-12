@@ -1,0 +1,15 @@
+@import url(reset.css);
+@import url(dsa-secure.css);
+
+/* Variables */
+:root {
+	--color-primary: #cc0000;
+	--color-primary-t: rgba(204, 0, 0, 0.6);
+	--color-accent: #ffd500;
+	--color-text: #242424;
+	--font-family: sans-serif;
+}
+
+main {
+	min-height: 100vh;
+}

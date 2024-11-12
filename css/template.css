@@ -1,0 +1,73 @@
+body:has(.remove-this) {
+    background: url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=2560&h=1440&dpr=1) center center/cover;
+}
+
+body:has(.remove-this) main {
+    width: min(95%, 950px);
+    margin-inline: auto;
+    padding-block: 5vmin;
+}
+
+:root {
+    font-family: 'Asap', sans-serif;
+    --text: #02060d;
+    --background: #f6f9fe;
+    --primary: #6597f6;
+    --secondary: #95a6c6;
+    --accent: #fb5cfa;
+}
+
+body:has(.remove-this) .remove-this {
+    border-radius: 5px;
+    background-color: var(--background);
+    padding: 7.5vmin;
+    box-shadow: 0 3px 2px rgba(0 0 0 / 15%), 0 10px 25px rgba(0 0 0 / 5%);
+}
+
+@-moz-document url-prefix() {
+    body:has(.remove-this) .remove-this {
+        background: rgba(240 240 240 / 40%);
+        backdrop-filter: blur(15px);
+    }
+}
+
+body:has(.remove-this) .remove-this p {
+    max-width: 75ch;
+}
+
+body:has(.remove-this) h1 {
+    font-size: 3rem;
+    font-family: 'Clash Display', sans-serif;
+    margin-bottom: .5em;
+
+    display: inline-block;
+
+    background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body:has(.remove-this) .dsa-secure-plugin,
+body:has(.remove-this) .dsa-cookie {
+    display: none;
+}
+
+body:has(.remove-this) .subheadline {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+body:has(.remove-this) ul {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+body:has(.remove-this) code {
+    font-family: monospace;
+    padding: .15em .5em;
+    border-radius: 5px;
+    background-color: rgba(240 240 240 / 40%);
+    position: relative;
+    top: -.1em;
+}
